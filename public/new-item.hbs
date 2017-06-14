@@ -1,7 +1,7 @@
 <ul class="list-group">
     {{#each this}}
     <li class="itemIn" data-name=" {{ name }} " data-price=" {{ price }} ">
-        <p> {{ name }}: {{ price }} <button type="button" class="btn btn-danger remove-from-cart">Delete Item</button>
+        <p> {{ name }} {{#if displayQuantity}}({{ quantity }}){{/if}}: {{ price }} <button type="button" class="btn btn-danger remove-from-cart">Delete Item</button>
         </p>
     </li> {{/each}}
 </ul>
